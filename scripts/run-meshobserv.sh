@@ -1,9 +1,9 @@
 #!/bin/bash
 
-docker stop meshobserv
-docker rm meshobserv
+podman stop meshobserv
+podman rm meshobserv
 
-docker run --name meshobserv \
+podman run --name meshobserv \
     --restart unless-stopped \
     -v /data:/data \
     -d meshobserv \

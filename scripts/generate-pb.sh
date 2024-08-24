@@ -1,6 +1,6 @@
 #!/bin/bash
 
-docker run \
+podman run \
     --rm \
     -v "$(cd "$(dirname "$0")"; pwd)/..":/data \
     golang \

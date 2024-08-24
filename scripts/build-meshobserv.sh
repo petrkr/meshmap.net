@@ -2,7 +2,7 @@
 
 bash "$(dirname "$0")/generate-pb.sh" || exit $?
 
-docker build \
+podman build \
     --no-cache \
     --pull \
     -f "$(dirname "$0")/../Dockerfile.meshobserv" \
