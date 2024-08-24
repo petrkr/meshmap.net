@@ -3,7 +3,7 @@
 podman run \
     --rm \
     -v "$(cd "$(dirname "$0")"; pwd)/..":/data \
-    golang \
+    docker.io/golang \
     bash -c "
         apt-get update &&
         apt-get install -y protobuf-compiler patch &&
