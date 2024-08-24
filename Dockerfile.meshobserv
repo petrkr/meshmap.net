@@ -1,4 +1,4 @@
-FROM golang:latest AS build
+FROM docker.io/golang:latest AS build
 WORKDIR /build
 COPY go.mod ./
 COPY cmd/meshobserv ./
