@@ -319,7 +319,7 @@
   const drawMap = async shouldDraw => {
     if (shouldDraw) {
       try {
-        await fetch('/nodes.json').then(r => r.json()).then(updateNodes)
+        await fetch('nodes.json').then(r => r.json()).then(updateNodes)
       } catch (e) {
         console.error('Failed to update nodes:', e)
       }
