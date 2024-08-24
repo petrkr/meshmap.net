@@ -16,7 +16,7 @@ import (
 	"google.golang.org/protobuf/proto"
 )
 
-const RootTopic = "msh/#"
+const RootTopic = "msh/CZ/#"
 
 var DefaultKey = []byte{
 	0xd4, 0xf1, 0xbb, 0x3a,
